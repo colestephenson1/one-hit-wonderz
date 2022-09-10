@@ -4,7 +4,8 @@ import '../../images/background-image.png'
 import Header from '../Header/Header'
 import DecadeContainer from '../DecadeContainer/DecadeContainer';
 import oneHitWonders from '../../mockData.js'
-
+import { Route } from 'react-router-dom'
+import SongContainer from '../SongContainer/SongContainer'
 
 class App extends React.Component {
   constructor() {
@@ -20,7 +21,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <DecadeContainer songs={this.state.songs} />
+        <Route exact path="/" render={() => <DecadeContainer songs={this.state.songs} />}/>
+        <Route exact path="/:decade" render={({match}) => <SongContainer decade={match.params.decade} />} />
       </div>
     )
   }

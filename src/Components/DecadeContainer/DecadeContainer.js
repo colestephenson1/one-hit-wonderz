@@ -1,5 +1,7 @@
 import React from 'react';
 import DecadeCard from '../DecadeCard/DecadeCard'
+import { NavLink } from 'react-router-dom'
+import './DecadeContainer.css'
 
 const DecadeContainer = ({songs}) => {
 
@@ -13,6 +15,7 @@ const DecadeContainer = ({songs}) => {
     })
 
     return (
+    
       <div className='decade-container'>
         {decadeCards}
       </div>
