@@ -1,0 +1,12 @@
+body {
+  background-image: url('../../images/background-image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.logo {
+  height: 110px;
+  padding: 20px;
+}
