@@ -1,5 +1,5 @@
 const oneHitWonders = {
-    "60s": [{
+    "Sixties": [{
       
         "song_name": `Monster Mash`,
         "artist": `Bobby Pickett`,
@@ -23,7 +23,7 @@ const oneHitWonders = {
         "spotify_key": `4anUinKv803lyDD1vaSXhU`
 
     }],
-    "70s": [{
+    "Seventies": [{
         "song_name": `My Sharona`,
         "artist": `The Knack`,
         "genre": `Power pop`,
@@ -43,7 +43,7 @@ const oneHitWonders = {
         "cover_image": `https://i.discogs.com/At0wYNeJznv_BsmSkiiT42rbaxikP3iE9vQO5FC3cTU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTc4/MS0xMzA2NDAzMDMz/LmpwZWc.jpeg`,
         "spotify_key": `40NRm1ZLvZpUSCUXAGGZ8J`
         }],
-    "80s": [{
+    "Eighties": [{
         "song_name": `Rock On`,
         "artist": `Michael Damian`,
         "genre": `Rock`,
@@ -63,7 +63,7 @@ const oneHitWonders = {
         "cover_image": `http://www.liketotally80s.com/wp-content/uploads/2015/12/party-all-the-time.jpg`,
         "spotify_key": `6N5DRCQUSXT1qQqmqsO92B`
         }],
-    "90s": [{
+    "Nineties": [{
         "song_name": `MMMBop`,
         "artist": `Hanson`,
         "genre": `Pop rock`,
@@ -85,7 +85,7 @@ const oneHitWonders = {
         "cover_image": `https://i.discogs.com/Ugq9qK-WxUvHHdh7JWAqRFMQmg91Yby5G5tcy4O35MI/rs:fit/g:sm/q:90/h:527/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3ODUw/NzYtMTI1NzYyOTE0/Ny5qcGVn.jpeg`,
         "spotify_key": `3PkvYP6223QO3xlW2THd1x`
         }],
-    "00s": [{
+    "Aughts": [{
         "song_name": `Bad Day`,
         "artist": `Daniel Powter`,
         "genre": `Pop`,
@@ -106,7 +106,7 @@ const oneHitWonders = {
         "cover_image": `https://3.bp.blogspot.com/-ffTyCqr9LTE/TesS6fnMqbI/AAAAAAAAANM/_Prh8FhkIGg/s1600/LLBL.jpg`,
         "spotify_key": `7wZUrN8oemZfsEd1CGkbXE`
         }],
-    "10s": [{
+    "Tens": [{
         "song_name": `Somebody That I Used To Know`,
         "artist": `Gotye`,
         "genre": "Art pop",
