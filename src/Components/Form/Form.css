@@ -1,0 +1,26 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    
+}
+
+input,
+select {
+    margin: 5px;
+    height: 35px;
+    border: none;
+    background-color: #ebc237ff;
+    width: 180px;
+}
+
+button {
+    margin: 5px 20px 5px 5px;
+    width: 100px;
+    height: 37px;
+    border: none;
+    background-color: #ebc237ff;
+}
+
