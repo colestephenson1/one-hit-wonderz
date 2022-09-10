@@ -2,6 +2,7 @@ import React from 'react';
 import DecadeCard from '../DecadeCard/DecadeCard'
 import { NavLink } from 'react-router-dom'
 import './DecadeContainer.css'
+import Form from '../Form/Form';
 
 const DecadeContainer = ({songs}) => {
 
@@ -17,6 +18,7 @@ const DecadeContainer = ({songs}) => {
     return (
     
       <div className='decade-container'>
+        <Form />
         {decadeCards}
       </div>
     )
