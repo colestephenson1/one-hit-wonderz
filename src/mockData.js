@@ -1,5 +1,6 @@
 const oneHitWonders = {
     "60s": [{
+      
         "song_name": `Monster Mash`,
         "artist": `Bobby Pickett`,
         "genre": `Pop`,
@@ -9,7 +10,7 @@ const oneHitWonders = {
         He co-wrote his signature song, "Monster Mash", with Leonard Capizzi in May 1962 as a spoof of popular contemporary dance crazes.`,
         "cover_image": `https://e.snmc.io/i/1200/s/c9bd0c7970cbe22f49803c389cb7fbfd/2041579`,
         "spotify_key": `0xxZY5C9xxij3D1HkzbnfC`
-    
+
     },
     {
         "song_name": `Wipeout`,
@@ -20,7 +21,7 @@ const oneHitWonders = {
         "bio": `Bob Berryhill, Pat Connolly, Jim Fuller and Ron Wilson wrote "Wipe Out" almost on the spot while at Pal Recording Studio in Cucamonga, California, in late 1962, when they realized they needed a suitable B-side for the intended "Surfer Joe" single. One of the band members suggested introducing the song with a cracking sound, imitating a breaking surfboard, followed by a manic voice babbling, "ha ha ha ha ha, wipe out". The voice was that of the band's manager, Dale Smallin.`,
         "cover_image": `https://upload.wikimedia.org/wikipedia/en/e/e4/Surfaris_Wipeout_single.jpg`,
         "spotify_key": `4anUinKv803lyDD1vaSXhU`
-    
+
     }],
     "70s": [{
         "song_name": `My Sharona`,
@@ -114,7 +115,7 @@ const oneHitWonders = {
         "bio": `Pretty much the ultimate 2010s One Hit Wonder, Australians Wally De Backer (Gotye) has failed to follow-up the worldwide success of his heartfelt hit. New Zealand singer Kimbra, who also appears on the record, has mainly kept herself to the Southern hemisphere.`,
         "cover_image": `https://4.bp.blogspot.com/-ApIbk3t_-Ho/T07wtGyTXVI/AAAAAAAABwQ/AWJjth6tvwg/w1200-h630-p-k-no-nu/gotye_somebody_that_i_used_to_know_.jpg`,
         "spotify_key": `4wCmqSrbyCgxEXROQE6vtV`
-        }, 
+        },
         {
         "song_name":`Ex's And Oh's`,
         "artist": `Elle King`,
