@@ -16,10 +16,12 @@ const SongContainer = ({decade}) => {
     })
 
     return (
-        <div className='song-container'>
+        <div className='body'>
             <Form />
+            <div className='song-container'>
             <h2>Decade Title</h2>
             {spotifyCards}
+            </div>
         </div>
     )
 }

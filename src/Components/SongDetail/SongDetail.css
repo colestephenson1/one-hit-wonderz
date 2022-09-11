@@ -1,0 +1,26 @@
+p {
+    background-color: #f2f4d1;
+    height: 40vh;
+    padding: 5vh;
+    width: 40vw;
+}
+
+.song-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.cover-image {
+    height: 50vh;
+}
+
+.song-title-details {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+}

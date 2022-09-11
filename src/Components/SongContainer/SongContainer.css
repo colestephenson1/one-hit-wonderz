@@ -1,0 +1,6 @@
+.song-container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    margin: 0 0 0 4%;
+}
