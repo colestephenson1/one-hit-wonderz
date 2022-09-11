@@ -4,12 +4,12 @@ import Form from '../Form/Form'
 import './Header.css'
 import { NavLink } from 'react-router-dom'
 
-const Header = () => {
+const Header = ({clearState}) => {
     return (
         <div className="full-header">
             <div>
                 <NavLink to="/">
-                    <img src={logo} alt='logo' className='logo'/>
+                    <img src={logo} alt='logo' className='logo' onClick={() => clearState()}/>
                 </NavLink>
             </div>
             <div>

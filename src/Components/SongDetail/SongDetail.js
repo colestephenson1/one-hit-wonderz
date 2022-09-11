@@ -2,7 +2,7 @@ import React from "react";
 import './SongDetail.css'
 
 const SongDetail = ({song}) => {
-    const {song_name, artist, genre, Moods, release_date, bio, cover_image} = song
+    const {song_name, artist, genre, moods, release_date, bio, cover_image} = song
     return (
         <div className='song-detail'>
             <img src={cover_image} className='cover-image'/>
@@ -15,7 +15,7 @@ const SongDetail = ({song}) => {
                 <br></br>
                 GENRE: {genre}
                 <br></br>
-                MOODS: {Moods.join(' · ')}
+                MOODS: {moods.join(' · ')}
                 <br></br>
                 RELEASE DATE: {release_date}
             </p>

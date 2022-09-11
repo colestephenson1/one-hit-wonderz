@@ -23,18 +23,18 @@ class App extends React.Component {
 
 
     })
-    this.setState({filteredSongs: filtered})
+    this.setState({songs: oneHitWonders, filteredSongs: filtered})
   }
 
   clearState = () => {
-    this.setState({filteredSongs: []})
+    this.setState({songs: oneHitWonders, filteredSongs: []})
   }
 
   render() {
 
     return (
       <div className="App">
-        <Header />
+        <Header clearState={this.clearState} />
         <Route exact path="/" render={() => <DecadeContainer songs={this.state.songs} />}/>
         <Route exact path="/:decade" render={({match}) => <SongContainer decade={match.params.decade} method={this.filteredSongs} filteredSongs={this.state.filteredSongs} />} />
         <Route exact path="/:decade/:song_name" render={({match}) => {
