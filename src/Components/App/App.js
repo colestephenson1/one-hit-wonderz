@@ -13,17 +13,30 @@ class App extends React.Component {
     super()
     this.state = {
       songs: oneHitWonders,
+      filteredSongs: [],
     }
   }
 
+  filteredSongs = (mood, decade) => {
+    const filtered = this.state.songs[decade].filter(song => {
+      return song.moods.includes(mood)
+
+
+    })
+    this.setState({songs: oneHitWonders, filteredSongs: filtered})
+  }
+
+  clearState = () => {
+    this.setState({songs: oneHitWonders, filteredSongs: []})
+  }
 
   render() {
 
     return (
       <div className="App">
-        <Header />
+        <Header clearState={this.clearState} />
         <Route exact path="/" render={() => <DecadeContainer songs={this.state.songs} />}/>
-        <Route exact path="/:decade" render={({match}) => <SongContainer decade={match.params.decade} />} />
+        <Route exact path="/:decade" render={({match}) => <SongContainer decade={match.params.decade} method={this.filteredSongs} filteredSongs={this.state.filteredSongs} />} />
         <Route exact path="/:decade/:song_name" render={({match}) => {
           const decadeKeys = Object.keys(this.state.songs)
           const foundSong = decadeKeys.map(key => {

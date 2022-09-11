@@ -4,10 +4,11 @@ import './SongContainer.css'
 import Spotify from '../Spotify/Spotify'
 import Form from '../Form/Form.js'
 
-const SongContainer = ({decade}) => {
+const SongContainer = ({decade, method, filteredSongs}) => {
+
 
     const spotifyCards = oneHitWonders[decade].map(song => {
-        return <Spotify 
+        return <Spotify
             decade={decade}
             songKey={song.spotify_key}
             key={Math.random()}
@@ -15,15 +16,27 @@ const SongContainer = ({decade}) => {
         />
     })
 
+    const filteredSongCards = filteredSongs.map(song => {
+      return <Spotify
+          decade={decade}
+          songKey={song.spotify_key}
+          key={Math.random()}
+          songName={song.song_name}
+      />
+    })
+
+    const which = filteredSongs.length ? filteredSongCards : spotifyCards;
+
+
     return (
         <div className='body'>
-            <Form />
+            <Form method={method} decade={decade} />
             <div className='song-container'>
             <h2>Decade Title</h2>
-            {spotifyCards}
+            {which}
             </div>
         </div>
     )
 }
 
-export default SongContainer 
+export default SongContainer
