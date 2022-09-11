@@ -10,3 +10,7 @@ body {
   height: 110px;
   padding: 20px;
 }
+
+* {
+  font-family: 'Nanum Gothic', sans-serif;
+}

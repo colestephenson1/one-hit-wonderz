@@ -1,35 +1,60 @@
+.Sixties,
+.Seventies,
+.Eighties,
+.Nineties,
+.Aughts,
+.Tens {
+    margin: 3%;
+    border-radius: 10px;
+    height: 150px;
+    text-align: right;
+}
+
 .Sixties {
-    background-color: gray;
-    margin: 2%;
+    background-color: #d14b5e;
 }
 
 .Seventies {
-    background-color: gray;
-    margin: 2%;
+    background-color: #eb7548;
 }
 
 .Eighties {
-    background-color: gray;
-    margin: 2%;
+    background-color: #e9c336;
 }
 
 .Nineties {
-    background-color: gray;
-    margin: 2%;
+    background-color: #7db0bf;
 }
 
 .Aughts {
-    background-color: gray;
-    margin: 2%;
+    background-color: #88afa4;
 }
 
 .Tens {
-    background-color: gray;
-    margin: 2%;
+    background-color: #f2f4d1;
 }
 
-.cover-image {
-    height: 100px;
-    width: 100px;
+h2 {
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 220%;
+    padding: 10px;
+    font-weight: normal;
+    color: black;
 }
+
+Link {
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:-webkit-any-link:hover {
+    opacity: .75;
+    transition: all 300ms ease-in-out;
+}
+
 

@@ -17,9 +17,11 @@ const DecadeContainer = ({songs}) => {
 
     return (
     
-      <div className='decade-container'>
+      <div className='decade-body'>
         <Form />
-        {decadeCards}
+        <div className='decade-container'>
+         {decadeCards}
+        </div>
       </div>
     )
 
