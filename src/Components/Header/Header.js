@@ -12,9 +12,6 @@ const Header = ({clearState}) => {
                     <img src={logo} alt='logo' className='logo' onClick={() => clearState()}/>
                 </NavLink>
             </div>
-            <div>
-                {/* <Form /> */}
-            </div>
         </div>
     )
 }

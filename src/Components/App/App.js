@@ -12,7 +12,7 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      songs: oneHitWonders,
+      songs: [],
       filteredSongs: [],
     }
   }
@@ -20,14 +20,27 @@ class App extends React.Component {
   filteredSongs = (mood, decade) => {
     const filtered = this.state.songs[decade].filter(song => {
       return song.moods.includes(mood)
-
-
     })
-    this.setState({songs: oneHitWonders, filteredSongs: filtered})
+    this.fetchAllSongs()
+    this.setState({filteredSongs: filtered})
   }
 
   clearState = () => {
-    this.setState({songs: oneHitWonders, filteredSongs: []})
+    this.fetchAllSongs()
+    this.setState({filteredSongs: []})
+  }
+
+  fetchAllSongs = () => {
+    fetch('http://localhost:3001/api/v1/oneHitWonderz')
+    .then(response => response.json())
+    .then(data => {
+      this.setState({songs: data})
+    })
+    .catch(error => console.log(error))
+  }
+
+  componentDidMount = () => {
+    this.fetchAllSongs();
   }
 
   render() {
@@ -36,7 +49,7 @@ class App extends React.Component {
       <div className="App">
         <Header clearState={this.clearState} />
         <Route exact path="/" render={() => <DecadeContainer songs={this.state.songs} />}/>
-        <Route exact path="/:decade" render={({match}) => <SongContainer decade={match.params.decade} method={this.filteredSongs} filteredSongs={this.state.filteredSongs} />} />
+        <Route exact path="/:decade" render={({match}) => <SongContainer decade={match.params.decade} method={this.filteredSongs} filteredSongs={this.state.filteredSongs} defaultSongs={this.state.songs} />} />
         <Route exact path="/:decade/:song_name" render={({match}) => {
           const decadeKeys = Object.keys(this.state.songs)
           const foundSong = decadeKeys.map(key => {

@@ -8,8 +8,12 @@ const DecadeContainer = ({songs}) => {
 
     const decadeKeys = Object.keys(songs);
     const decadeCards = decadeKeys.map(key => {
+      
+    let coverIndex = Math.floor(Math.random() * songs[key].length);
+    let song = songs[key][coverIndex]
+
       return <DecadeCard
-        picture={songs[key][0].cover_image}
+        picture={song.cover_image}
         decade={key}
         key={Math.random()}
         />

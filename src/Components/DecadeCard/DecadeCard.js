@@ -8,11 +8,10 @@ const DecadeCard = ({picture, decade}) => {
     <Link to={`/${decade}`}>
       <div className={decade}
         style={{
-          backgroundImage: `url(${picture})`, 
-          backgroundPosition: "left", 
+          backgroundImage: `url(${picture})`,
+          backgroundPosition: "left",
           backgroundRepeat: "no-repeat",
           backgroundSize: "150px 150px"}}>
-        {/* <img src={picture} alt={decade} className="cover-image"/> */}
         <h2>{decade.toUpperCase()}</h2>
       </div>
     </Link>
