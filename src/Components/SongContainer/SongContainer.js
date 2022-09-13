@@ -4,10 +4,10 @@ import './SongContainer.css'
 import Spotify from '../Spotify/Spotify'
 import Form from '../Form/Form.js'
 
-const SongContainer = ({decade, method, filteredSongs}) => {
+const SongContainer = ({decade, method, filteredSongs, defaultSongs}) => {
 
 
-    const spotifyCards = oneHitWonders[decade].map(song => {
+    const spotifyCards = defaultSongs[decade].map(song => {
         return <Spotify
             decade={decade}
             songKey={song.spotify_key}
