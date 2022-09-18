@@ -11,6 +11,12 @@ body {
   padding: 20px;
 }
 
+.error-message {
+  color: red;
+  text-align: center;
+  font-size: 125%
+}
+
 * {
   font-family: 'Nanum Gothic', sans-serif;
 }

@@ -1,12 +1,6 @@
-// describe('empty spec', () => {
-//   it('passes', () => {
-//     cy.visit('https://example.cypress.io')
-//   })
-// })
-
 describe('App', () => {
   beforeEach(() => {
-    cy.intercept('GET', 'http://localhost:3001/api/v1/oneHitWonderz', { fixture: 'songData' } )
+    cy.intercept('GET', 'http://localhost:3001/api/v1/oneHitWonders', { fixture: 'songData' } )
     .visit("http://localhost:3000/")
   })
   it('should visit the website', () => {
@@ -69,5 +63,11 @@ describe('App', () => {
     .get('.Seventies').should('be.visible')
     .get('.Eighties').should('be.visible')
   })
+  // it('Should show an error message if the response is not ok', () => {
+  //   cy.intercept('GET', 'http://localhost:3001/api/v1/oneHitWonders', {
+  //       statusCode: 404
+  //     })
+  //     .get('.error-message').should('contain', 'Error 404. The data could not be fetched. Please reload and try again')
+  // })
 
 })

@@ -15,6 +15,8 @@ class App extends React.Component {
     this.state = {
       songs: [],
       filteredSongs: [],
+      error: false,
+      errorMessage: ''
     }
   }
 
@@ -32,12 +34,24 @@ class App extends React.Component {
   }
 
   fetchAllSongs = () => {
-    fetch('http://localhost:3001/api/v1/oneHitWonderz')
-    .then(response => response.json())
+    fetch('http://localhost:3001/api/v1/oneHitWonders')
+    .then(response => {
+      if(!response.ok) {
+        throw new Error()
+      } else {
+        this.setState({error: false})
+        return response.json()
+      }
+    })
     .then(data => {
       this.setState({songs: data})
     })
-    .catch(error => console.log(error))
+    .catch(error => {
+      console.log(error)
+      this.setState({error: true, errorMessage: 'Error 404. The data could not be fetched. Please reload and try again'})
+
+
+    })
   }
 
   componentDidMount = () => {
@@ -50,6 +64,7 @@ class App extends React.Component {
       <div className="App">
         <Header clearState={this.clearState} />
         <Switch>
+          {(this.state.error && <h4 className="error-message">{this.state.errorMessage}</h4>)}
           <Route exact path="/" render={() => <DecadeContainer songs={this.state.songs} />}/>
           <Route exact path="/oneHitWonders/:decade" render={({match}) => <SongContainer decade={match.params.decade} method={this.filteredSongs} filteredSongs={this.state.filteredSongs} defaultSongs={this.state.songs} />} />
           <Route exact path="/oneHitWonders/:decade/:song_name" render={({match}) => {
