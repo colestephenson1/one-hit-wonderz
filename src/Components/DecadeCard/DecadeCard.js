@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const DecadeCard = ({picture, decade}) => {
 
   return (
-    <Link to={`/${decade}`}>
+    <Link to={`/oneHitWonders/${decade}`}>
       <div className={decade}
         style={{
           backgroundImage: `url(${picture})`,
