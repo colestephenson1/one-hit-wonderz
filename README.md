@@ -14,20 +14,21 @@
   - [Project Specs](#project-specs)
 
 ## Introduction
+  - The goal of this group project was to create a React application and self learn the set up of a backend server. We wrote a dataset, connected it to  PostgreSQL using the ORM Knex, and deployed both the app and api using Heroku. 
   - Visit One Hit Wonders to see a list of six decades, which upon clicked, load ten inline Spotify elements that represent one hit wonders from that decade. The user can play the song from that element, click a link to visit the song's Spotify page, and can click buttons to filter by song mood or to see additional information about the song/artist.
 
 ## Technologies
-  - Javascript
   - React
+  - JavaScript
+  - postgreSQL
+  - Knex
   - Cypress
   - Router
   - HTML
   - CSS
-  - postgreSQL
-  - Knex
 
 ## Features
-- Listen to the songs within the application.
+- Listen to the songs within the application through an embedded Spotify player.
 - Filter songs in a decade by mood.
 - Find out more information about the artist/song.
 
@@ -35,7 +36,8 @@
 - Create a favorites list which can exported to Spotify as a playlist.
 
 ## Set Up
-1. Visit this Heroku link https://one-hit-wonders-app.herokuapp.com/ and have fun!
+- Deployed application: https://one-hit-wonders-app.herokuapp.com
+- Deployed API: https://one-hit-wonders-api.herokuapp.com/api/v1/oneHitWonderz
 
 ## Organizational Resources
 - [github project board](https://github.com/users/colestephenson1/projects/1)
