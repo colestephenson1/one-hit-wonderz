@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# One Hit Wonders
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Screen Shot 2022-09-19 at 1 11 47 PM](https://user-images.githubusercontent.com/100726140/191096910-fa024654-646b-4e0b-b8ba-26e237f3c654.png)
 
-## Available Scripts
+## Table of Contents
+  - [Introduction](#introduction)
+  - [Technologies](#technologies)
+  - [Features](#features)
+  - [Possible Future Extensions](#possible-future-extensions)
+  - [Set Up](#set-up)
+  - [Organizational Resources](#organizational-resources)
+  - [Sources](#sources)
+  - [Contributors](#contributors)
+  - [Project Specs](#project-specs)
 
-In the project directory, you can run:
+## Introduction
+  - Visit One Hit Wonders to see a list of six decades, which upon clicked, load ten inline Spotify elements that represent one hit wonders from that decade. The user can play the song from that element, click a link to visit the song's Spotify page, and can click buttons to filter by song mood or to see additional information about the song/artist.
 
-### `npm start`
+## Technologies
+  - Javascript
+  - React
+  - Cypress
+  - Router
+  - HTML
+  - CSS
+  - postgreSQL
+  - Knex
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+- Listen to the songs within the application.
+- Filter songs in a decade by mood.
+- Find out more information about the artist/song.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Possible Future Extensions
+- Create a favorites list which can exported to Spotify as a playlist.
 
-### `npm test`
+## Set Up
+1. Visit this Heroku link https://one-hit-wonders-app.herokuapp.com/ and have fun!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Organizational Resources
+- [github project board](https://github.com/users/colestephenson1/projects/1)
+- [data collection google doc](https://docs.google.com/document/d/1MzZpRZ_WjslrsORh_CPJMzDTMtxBnPnhwczY1wrO8eg/edit)
+- [wireframe](https://excalidraw.com/#room=ba9309875b79741e6450,P3Q_rXMLL8eVYMjxKoQrTQ)
 
-### `npm run build`
+## Sources
+  - [MDN](http://developer.mozilla.org/en-US/)
+  - [W3Schools](https://www.w3schools.com/)
+  - [CSS-TRICKS](https://css-tricks.com/)
+  - [Knex](https://knexjs.org/guide/)
+  - [postgreSQL](https://www.postgresql.org/docs/current/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributors
+  - [Cole Stephenson](https://github.com/colestephenson1)
+  - [Ivy Nguyen](https://github.com/INguyen22)
+  - [Abby Luce](https://github.com/abbyluce)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Specs
+  - The project spec & rubric can be found [here](https://frontend.turing.edu/projects/module-3/stretch.html)
