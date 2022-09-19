@@ -1,5 +1,4 @@
 import React from 'react'
-import oneHitWonders from '../../mockData.js'
 import './SongContainer.css'
 import Spotify from '../Spotify/Spotify'
 import Form from '../Form/Form.js'

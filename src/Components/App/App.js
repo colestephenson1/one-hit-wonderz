@@ -3,7 +3,6 @@ import './App.css'
 import '../../images/background-image.png'
 import Header from '../Header/Header'
 import DecadeContainer from '../DecadeContainer/DecadeContainer';
-import oneHitWonders from '../../mockData.js'
 import { Route, Switch } from 'react-router-dom'
 import SongContainer from '../SongContainer/SongContainer'
 import SongDetail from '../SongDetail/SongDetail';
@@ -48,10 +47,7 @@ class App extends React.Component {
       this.setState({songs: data})
     })
     .catch(error => {
-      console.log(error)
       this.setState({error: true, errorMessage: 'Error 404. The data could not be fetched. Please reload and try again'})
-
-
     })
   }
 
