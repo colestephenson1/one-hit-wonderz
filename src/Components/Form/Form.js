@@ -21,7 +21,6 @@ class Form extends React.Component {
             <div className="form">
             <select id="mood" name="mood" value={this.state.mood} onChange={event => this.handleChange(event)}>
                 <option value="choose-mood" selected>SEARCH BY MOOD</option>
-                <option value="happy">HAPPY</option>
                 <option value="sad">SAD</option>
                 <option value="chill">CHILL</option>
                 <option value="heavy">HEAVY</option>

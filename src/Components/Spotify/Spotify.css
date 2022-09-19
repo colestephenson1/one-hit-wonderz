@@ -1,11 +1,13 @@
 iframe {
     margin: 10px;
-    width: 80%;
+    width: 50%;
+
 }
 
 .spotify {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .song-details-button {

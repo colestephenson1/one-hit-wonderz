@@ -8,6 +8,7 @@ import { Route, Switch } from 'react-router-dom'
 import SongContainer from '../SongContainer/SongContainer'
 import SongDetail from '../SongDetail/SongDetail';
 import Error from '../Error/Error'
+import Footer from '../Footer/Footer'
 
 class App extends React.Component {
   constructor() {
@@ -77,6 +78,7 @@ class App extends React.Component {
           }/>
           <Route render={() => <Error/>}/>
         </Switch>
+        <Footer />
       </div>
     )
   }

@@ -1,5 +1,5 @@
 body {
-  background-image: url('../../images/background-image.png');
+  background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -19,4 +19,5 @@ body {
 
 * {
   font-family: 'Nanum Gothic', sans-serif;
+  
 }

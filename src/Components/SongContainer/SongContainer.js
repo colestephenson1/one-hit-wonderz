@@ -32,8 +32,10 @@ const SongContainer = ({decade, method, filteredSongs, defaultSongs}) => {
         <div className='body'>
             <Form method={method} decade={decade} />
             <div className='song-container'>
-            <h2>Decade Title</h2>
+            <h5>{decade.toUpperCase()} HITS</h5>
             {which}
+            <div className="empty-space">
+            </div>
             </div>
         </div>
     )
