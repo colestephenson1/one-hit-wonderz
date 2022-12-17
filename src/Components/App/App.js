@@ -34,7 +34,7 @@ class App extends React.Component {
   }
 
   fetchAllSongs = () => {
-    fetch(process.env.REACT_APP_API_URL)
+    fetch('https://new-ohw-api.vercel.app/songs')
     .then(response => {
       if(!response.ok) {
         throw new Error()
