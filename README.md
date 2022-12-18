@@ -36,7 +36,7 @@
 - Create a favorites list which can exported to Spotify as a playlist.
 
 ## Set Up
-- Deployed application: one-hit-wonderz-one.vercel.app/
+- Deployed application: https://one-hit-wonderz-one.vercel.app/
 - Deployed API: https://one-hit-wonders-api.herokuapp.com/api/v1/oneHitWonderz
 
 ## Organizational Resources
